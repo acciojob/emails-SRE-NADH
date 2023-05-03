@@ -29,7 +29,7 @@ public class Workspace extends Gmail{
         LocalTime t = tmp.get(0).getEndTime();
         int count=1;
         for(int i=1;i<tmp.size();i++){
-            if(tmp.get(i).getStartTime().compareTo(t)>0 || tmp.get(i).getStartTime().compareTo(t)==0){
+            if(tmp.get(i).getStartTime().compareTo(t)>0){
               count++;
                t=tmp.get(i).getEndTime();
               System.out.println(count);

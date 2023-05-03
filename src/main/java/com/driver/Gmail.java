@@ -66,7 +66,7 @@ public class Gmail extends Email {
             if(x.getDate().before(end) && x.getDate().after(start)){
                 count++;
             }
-            if(x.getDate().equals(start) || x.getDate().equals(end)){
+            else if(x.getDate().equals(start) || x.getDate().equals(end)){
                 count++;
             }
         }
