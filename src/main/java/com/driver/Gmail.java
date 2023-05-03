@@ -87,7 +87,7 @@ public class Gmail extends Email {
     }
 
     public void emptyTrash(){
-         trash.removeAll(trash);
+         trash.clear();
         // clear all mails in the trash
 
     }

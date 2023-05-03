@@ -31,13 +31,13 @@ public class Workspace extends Gmail{
         for(int i=1;i<tmp.size();i++){
             if(tmp.get(i).getStartTime().compareTo(t)>0 || tmp.get(i).getStartTime().compareTo(t)==0){
               count++;
-              t=tmp.get(i).getEndTime();
-             // System.out.println(count);
+               t=tmp.get(i).getEndTime();
+              System.out.println(count);
             }
         }
 //        for(int i=0;i< tmp.size();i++){
-//            System.out.println(tmp.get(i).getStartTime() +" "+tmp.get(i).getEndTime());
-//        }
+////            System.out.println(tmp.get(i).getStartTime() +" "+tmp.get(i).getEndTime());
+////        }
         return count;
         // find the maximum number of meetings you can attend
         // 1. At a particular time, you can be present in at most one meeting
